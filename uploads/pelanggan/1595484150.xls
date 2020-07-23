@@ -1,0 +1,2435 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<?fr-application created="FastReport"?>
+<?fr-application homesite="http://www.fast-report.com"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+<DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+<Title>Daftar Pelanggan</Title>
+<Author></Author>
+<Created>23/07/2020T12:54:02Z</Created>
+<Version>...</Version>
+</DocumentProperties>
+<ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+<ProtectStructure>False</ProtectStructure>
+<ProtectWindows>False</ProtectWindows>
+</ExcelWorkbook>
+<Styles>
+<Style ss:ID="s0">
+<Font ss:FontName="Tahoma" ss:Size="11" ss:Color="#000000" ss:Bold="1"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s1">
+<Font ss:FontName="Arial" ss:Size="16" ss:Color="#800000" ss:Bold="1"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s2">
+<Font ss:FontName="Tahoma" ss:Size="10" ss:Color="#000000" ss:Bold="1"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s3">
+<Font ss:FontName="Arial" ss:Size="8" ss:Color="#000000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s4">
+<Font ss:FontName="Arial" ss:Size="9" ss:Color="#000080" ss:Bold="1"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+<Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000" />
+</Borders>
+</Style>
+<Style ss:ID="s5">
+<Font ss:FontName="Arial" ss:Size="10" ss:Color="#000000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s6">
+<Font ss:FontName="Arial" ss:Size="8" ss:Color="#000000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s7">
+<Font ss:FontName="Arial" ss:Size="8" ss:Color="#000000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s8">
+<Font ss:FontName="Arial" ss:Size="8" ss:Color="#FF0000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s9">
+<Font ss:FontName="Tahoma" ss:Size="8" ss:Color="#000000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s10">
+<Font ss:FontName="Arial" ss:Size="1" ss:Color="#000000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+<Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="3" ss:Color="#C0C0C0" />
+</Borders>
+</Style>
+<Style ss:ID="s11">
+<Font ss:FontName="Tahoma" ss:Size="8" ss:Color="#000000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s12">
+<Font ss:FontName="Tahoma" ss:Size="8" ss:Color="#000000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+</Styles>
+<Worksheet ss:Name="Page 1">
+<Table ss:ExpandedColumnCount="10" ss:ExpandedRowCount="95" x:FullColumns="1" x:FullRows="1">
+<Column ss:AutoFitWidth="0" ss:Width="65.41"/>
+<Column ss:AutoFitWidth="0" ss:Width="81.40"/>
+<Column ss:AutoFitWidth="0" ss:Width="139.53"/>
+<Column ss:AutoFitWidth="0" ss:Width="66.86"/>
+<Column ss:AutoFitWidth="0" ss:Width="81.40"/>
+<Column ss:AutoFitWidth="0" ss:Width="95.93"/>
+<Column ss:AutoFitWidth="0" ss:Width="95.93"/>
+<Column ss:AutoFitWidth="0" ss:Width="64.68"/>
+<Column ss:AutoFitWidth="0" ss:Width="69.72"/>
+<Row ss:Height="13.81">
+<Cell ss:Index="1" ss:MergeAcross="8" ss:StyleID="s0" >
+<Data ss:Type="String">PT. SINAR MENTARI SAKTI</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="21.80">
+<Cell ss:Index="1" ss:MergeAcross="8" ss:StyleID="s1" >
+<Data ss:Type="String">Daftar Pelanggan</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="13.08">
+<Cell ss:Index="1" ss:MergeAcross="8" ss:StyleID="s2" >
+<Data ss:Type="String">Per Tgl. 23 Jul 2020</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="21.80">
+<Cell ss:Index="1" ss:MergeAcross="8" ss:StyleID="s3" >
+<Data ss:Type="String">Filter berdasarkan :Non-aktif</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0014</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">SANYO MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">3623768</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">SUSANTO YONATHAN .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">420.227.678,92</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0030</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">TERMINAL AUTO MOBIL (INDAH MOTOR - S,SADDANG)</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">5058838</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MERFIE  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">2.716.758,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0076</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">YAMAHA MAKASSAR - MAHA RAYA MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">3632605</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">ALBERT  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">1.286.419,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0083</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">WIN KING MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">854 801</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">WANDY  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">10.844.928,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0122</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">MASA JAYA</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">870 231</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">HENDRA BUDIANG .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">29.542.874,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0127</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">MELATI JAYA MOTOR - TOMONI</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">LASINU  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0139</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">USAHA MOTOR - DAYA</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">512 782</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">.  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">93.985.180,16</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s7" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0174</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">SEJATI JAYA MOTOR - BANDANG 41</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">310 808</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">ADNAN  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0225</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">YAMAHA MAKASSAR - SINAR ALAM MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">324 717</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MARZUKI AMIN .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0250</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">GEMBIRA MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">.  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">2.292.609,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0267</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">ANUGRAH  PT</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">586776</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">KURNIA DARMA SAKTI</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0298</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">YAMAHA  BONE - MERPATI MOTOR BONE</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">21727</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">ARIS WIRYA .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0300</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">IVAN MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">.  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">2.271.013,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0301</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">HOSANA MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">854978</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">YENNY GOSALI .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">1.345.584,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0305</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">RUDI MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">RUDI  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0317</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">SUZUKI MATANGO - MELATI JAYA MOTOR  MATANGO</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">0481 - 2910319</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">H. SABAR  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0320</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">BANDUNG MOTOR - MAMUJU</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">085245978385</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">SULHAN RAZAK</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">62.770.901,80</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0326</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">ISTANA MOTOR - JENEPONTO</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">22156</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">.  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0349</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">ANUGRAH MOTOR - PERINTIS</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">RASE  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0356</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">REJEKI MOTOR - PINRANG</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">0421 - 923371</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">KAMARUDIN  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0362</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">SURYA JAYA MOTOR - PINRANG</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">0421 - 923075</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">SUGIONO  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0407</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">CAKRA MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">310230</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">.  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0458</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">MITRA JAYA - PERINTIS</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">KARDIMIN  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">17.239.579,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0459</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">TUNGGAL MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">861766</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">SYAFARUDIN  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">8.921.998,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0519</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">SYAM MOTOR - PERINTIS</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">.  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">1.687.197,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0570</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">PERMAISURI BAN</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">361 9215</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">SUNIARTO GUNAWAN</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">943.180.922,16</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0573</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">KARUNIA MOTOR -  BULUKUMBA</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">.  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0591</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">HANA MOTOR / BASILINDO</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">HANNA  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0596</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">FANANI MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">5050743</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">NUR ASMA .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">12.058.694,72</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0607</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">HONDA  MAKASSAR - PT. SANGGAR LAUT SELATAN</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">310 463</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">DAUD  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">176.467.533,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0626</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">CAHAYA DHARMA</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">5290588 - 4667369</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">ANTO  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0642</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">GLOBAL MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">6072846</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">ERWIN  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0662</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">DJAYA OTO</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">811 0632</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MICHAEL  DJAYA</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">73.490.992,16</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0663</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">LIEM MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">5706734</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">LIEM  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0677</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">JAKARTA MOTOR - BONE</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">2009750</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">EFFENDI  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0712</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">DUNIA MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">ARIF  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0719</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">SINAR MAS VARIASI</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">NATALIA  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">59.079.761,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0787</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">NUSANTARA MOTOR - PEKABATA</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">IWAN  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0802</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">MM VARIASI</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">.  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">2.885.995,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0852</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">AMAL JAYA - PERINTIS</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">.  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0855</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">DAIHATSU MAKASSAR - PT. MAKASSAR RAYA MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">.  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0859</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">HONDA MAKASSAR - PT. HONDA REMAJA JAYA MOBILINDO</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">THAMRIN  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0865</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">SUZUKI MAKASSAR -  PRIMA JAYA MOTOR - ADYAKSA</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">.  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">6.180.689,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0905</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">HONDA MAKASSAR -OMEGA OLI  HERTASNING</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">0411</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">.  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0924</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">NISSAN MAKASSAR - PT. WAHANA NISSAN PETTARANI</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">425777</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">ARIF  WICAKSONO</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0939</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">TOYOTA  KOLAKA - PT. HADJI KALLA</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">2321846</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">RAHMAN  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0940</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">SUZUKI  MAKASSAR - PT SUZUKI GUNUNG MERAPI.</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">316126</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">FRANGKY GANDIARJO .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0957</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">MITRA MOTOR PERINTIS</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">085299199101</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">SIRAJANG  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0967</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">PONGTIKU SATU MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">430 533</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">ICHAL  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0978</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">PUTRA JAYA - BANDANG</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">335 867</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">TONY  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS0983</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">SUZUKI BANTAENG - SUZUKI BUDI JAYA</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">23300</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">BUDI  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1004</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">SARINAH MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">0411</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">.  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1009</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">INDO MOTOR BANDANG</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">5775100</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">DAVID  DAVID</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1022</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">MALUKU MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">081</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">YUSRI  YUSRI</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1048</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">USAHA MOTOR - BTP</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">.  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1054</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">ANUGRAH MOTOR SPORT</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">6155724</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">RAGA  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1073</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">MITRA MOTOR - SURACO</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">321145</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MAJID  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1078</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">SUZUKI PANGKEP</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">5098988</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">HODY  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1084</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">YAMAHA PAHLAWAN JAYA MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">21444</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">VIKTOR  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1109</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">CHEVROLET - PT.PANAIKANG INTIM SEJAHTERA</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">.</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">.  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1110</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">TOYOTA BAU-BAU - PT.HADJI KALLA</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">2822888</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">ISMAIL  BENNU</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1114</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">MEDINAH OLI</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">085255451894</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">DEDI  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">3.845.184,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1128</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">TOYOTA KENDARI - PT. HADJI KALLA</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">3196333</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">IRWAN  EFFENDI</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1129</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">PANAIKANG INTIM SEJAHTERA, PT</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MR  .</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">8.783.808,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1131</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">FORD INDONESIA</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">081524000678</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MUH.  SIDI</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">1.953.307.605,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1147</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">MESRAN JAYA SARAPPO</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">0411</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MR  PAULUS</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1152</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">GARUDA MOTOR PINRANG</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">321047</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">ANCI  HASAN</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1154</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">ANDIKA AYU SRI LESTARI ( BENGKEL ABADI )</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">081242833111</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MR. BUDI</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">158.886.415,92</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1164</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">MEGAHPUTRA SEJAHTERA, PT</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">0411 - 3617327</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1175</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">MAZDA MAKASSAR - PT. KUMALA CELEBES MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">0411888910</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MR. Bungsu</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">55.924.863,44</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1197</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">DANESA MALILI</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">.</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">mr</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">61.384.932,40</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1200</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">JDW MOTOR PARE PARE</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">0413</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">Mrs. Merry</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1216</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">GOWA MAKASSAR TAXI, PT</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">Mr.</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">7.418.250,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1229</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">ADI SARANA ARMADA Tbk, PT  (ASSA RENT)</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">0411-880010</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MR. ABBAS - 0852 9800 0069</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">226.514.750,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1231</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">AGUNG TAXI, PT</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MR.</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">3.236.270,60</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1266</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">SOLOWESI MOTORRAD, PT (BMW MAKASSAR)</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">081242277737</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MR. CHARLES</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">3.407.976,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1295</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">LISPEN MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">085342704555</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MR. FIRMAN</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">1.578.469,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1297</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">LISPEN MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">085342704555</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">FIRMAN</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1324</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">SUZUKI AHMAD YANI BONE</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MR. MUHTAR</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">32.217.025,12</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1337</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">BINTANG MOBILINDO</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">085395113140</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MR. ASWAR</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">11.228.037,04</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1351</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">RACO MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">439026</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">JEMMY 08114107078</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">15.650.530,04</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1378</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">MAKASSAR MOTOR - INCE NURDIN</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">0411</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MR.</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1386</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">MUTIARA VARIASI MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">0411</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MR.</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1392</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">SERAM MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">0411</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">MR</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1405</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">BUDI MOTOR BANTAENG</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">1</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">BUDI</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">41.489.699,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1425</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">ALYYA MOTOR</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String">082190015757</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String">RAHMA NIAR</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s6" >
+<Data ss:Type="String">SMS1467</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="s6" >
+<Data ss:Type="String">ISTANA MOTOR - BARRU</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="s6" >
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s6" >
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Tidak Aktif</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" ss:MergeAcross="8" ss:StyleID="s10" >
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" ss:MergeAcross="8" ss:StyleID="s11" >
+<Data ss:Type="String">Cetak di 23 Jul 2020 - 12:52</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" ss:MergeAcross="8" ss:StyleID="s12" >
+<Data ss:Type="String">(3)</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+</Table>
+<WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+<PageSetup>
+<Layout x:Orientation="Landscape"/>
+<PageMargins x:Bottom="0.38" x:Left="0.38" x:Right="0.38" x:Top="0.38"/>
+</PageSetup>
+</WorksheetOptions>
+</Worksheet>
+</Workbook>
