@@ -107,10 +107,11 @@ class Data_pelanggan extends CI_Controller {
       $allowedFileType = ['application/vnd.ms-excel','text/plain','text/csv','text/tsv'];
       if (in_array($_FILES['userfile']['type'], $allowedFileType)) {
         $dir = 'uploads/pelanggan/';
-        $file = $dir . time();
-        if (move_uploaded_file($_FILES['userfile']['tmp_name'], $file . '.xls')) {
-          convertXLStoCSV($file . '.xls', $file . '.csv');
-          if (strpos(file_get_contents($file . '.csv'), 'Daftar Pelanggan') !== false)
+        $file = $dir . time() . '.xls';
+        $output = $dir . 'output.csv';
+        if (move_uploaded_file($_FILES['userfile']['tmp_name'], $file)) {
+          convertXLStoCSV($file, $output);
+          if (strpos(file_get_contents($output), '"Daftar Pelanggan","","","","","","","",""') !== false)
           {
             $import = $this->data_pelanggan_model->import();
             if ($import) {

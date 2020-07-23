@@ -37,6 +37,7 @@ function detail(id, nama, alamat, telepon, geolocation) {
   } else {
     $('#geolocation').val(geolocation);
   }
+  $('#shortlink').val('');
   map_pelanggan(geolocation);
   $('#pelangganModal').modal('show');
 }
