@@ -17,6 +17,7 @@ function tabel_pelanggan() {
           return '<a href="#" onclick="detail(\'' + row.kd_pelanggan + '\', \'' + row.nama_pelanggan + '\', \'' + row.alamat + '\', \'' + row.no_telepon + '\', \'' + row.geolocation + '\')">' + data + '</a>';
         } },
       { "data" : "alamat" },
+      { "data" : "geolocation" },
       { "data" : "no_telepon" }
     ]
   });
@@ -61,10 +62,10 @@ function map_pelanggan(geo) {
 		zoom: zoom
 	});
 
+  var marker = new mapboxgl.Marker({ draggable: true });
+
   if (geo != 'null') {
-    var marker = new mapboxgl.Marker({ draggable: true })
-    .setLngLat(geo_map.split(','))
-    .addTo(map);
+    marker.setLngLat(geo_map.split(',')).addTo(map);
   }
 
   $('#pelangganModal').on('shown.bs.modal', function() {
@@ -77,7 +78,7 @@ function map_pelanggan(geo) {
 
 	map.addControl(geocoder);
 
-  let geolocation;
+  var geolocation;
 
 	geocoder.on('result', function(e) {
 	  // console.log(e.result.center[0] + ', ' + e.result.center[1]);
@@ -89,23 +90,32 @@ function map_pelanggan(geo) {
 
 	  marker.setLngLat(e.result.center).addTo(map);
 
-		function onDragEnd() {
-			var lngLat = marker.getLngLat();
-			// console.log(lngLat.lng + ', ' + lngLat.lat);
-      geolocation = lngLat.lng + ', ' + lngLat.lat;
-      get_alamat(geolocation);
-      $('#geolocation').val(geolocation);
-		}
-
-		marker.on('dragend', onDragEnd);
 	});
+
+  function onDragEnd() {
+    var lngLat = marker.getLngLat();
+    // console.log(lngLat.lng + ', ' + lngLat.lat);
+    geolocation = lngLat.lng + ', ' + lngLat.lat;
+    get_alamat(geolocation);
+    $('#geolocation').val(geolocation);
+  }
+
+  marker.on('dragend', onDragEnd);
 }
 
 function get_alamat(geolocation) {
-
   $.getJSON("https://api.mapbox.com/geocoding/v5/mapbox.places/" + geolocation + ".json?access_token=" + token, function(data){
     // console.log(data.features[0].properties.address);
     $('#alamat').val(data.features[0].properties.address);
   });
+}
 
+function get_googleMaps() {
+  var url = $('#shortlink').val()
+  $.post( "data_pelanggan/redirect", { url: url })
+    .done(function( data ) {
+      get_alamat(data);
+      map_pelanggan(data);
+      $('#geolocation').val(data);
+  });
 }

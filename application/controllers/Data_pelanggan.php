@@ -49,6 +49,44 @@ class Data_pelanggan extends CI_Controller {
     }
   }
 
+  public function redirect()
+  {
+    // From URL to get redirected URL
+    $url = $_POST['url'];
+
+    // Initialize a CURL session.
+    $ch = curl_init();
+
+    // Grab URL and pass it to the variable.
+    curl_setopt($ch, CURLOPT_URL, $url);
+
+    // Catch output (do NOT print!)
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+
+    // Return follow location true
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    $html = curl_exec($ch);
+
+    // Getinfo or redirected URL from effective URL
+    $redirectedUrl = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
+
+    // Close handle
+    curl_close($ch);
+
+    $uri_path = parse_url($redirectedUrl, PHP_URL_PATH);
+    $uri_segments = explode('/', $uri_path);
+
+    // echo "Original URL:   " . $url . "<br/>";
+    // echo "Redirected URL: " . $redirectedUrl . "<br/>";
+
+    $geolocation = strstr($uri_segments[5], "!3d");
+    $geolocation = substr($geolocation, 3);
+    $geolocation = str_replace("!4d", ",", $geolocation);
+    $geolocation = explode(',', $geolocation);
+
+    echo $geolocation[1] . ', ' . $geolocation[0];
+  }
+
   public function import()
   {
     error_reporting(0);
