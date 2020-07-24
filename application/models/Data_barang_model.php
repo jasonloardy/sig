@@ -23,8 +23,8 @@ class Data_barang_model extends CI_Model {
 						 FIELDS TERMINATED BY ','
 						 ENCLOSED BY '"'
 						 LINES TERMINATED BY '\r\n'
-						 IGNORE 4 LINES
-						 (@skip1, kd_barang, nama_barang, no_telepon)
+						 IGNORE 5 LINES
+						 (@skip1, kd_barang, @skip2, nama_barang)
 eof;
 
 		 return $this->db->query($sql);
@@ -33,10 +33,10 @@ eof;
 	public function insert()
 	{
 		$sql = "INSERT INTO tb_barang
-						SELECT * FROM tb_barang_temp tpt
-						WHERE tpt.kd_barang NOT IN
-						(SELECT tp.kd_barang FROM tb_barang tp)
-						AND tpt.kd_barang <> ''";
+						SELECT * FROM tb_barang_temp tbt
+						WHERE tbt.kd_barang NOT IN
+						(SELECT tb.kd_barang FROM tb_barang tb)
+						AND tbt.kd_barang <> ''";
 
     return $this->db->query($sql);
 	}

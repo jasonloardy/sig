@@ -1,0 +1,1445 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<?fr-application created="FastReport"?>
+<?fr-application homesite="http://www.fast-report.com"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+<DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+<Title>Daftar Barang</Title>
+<Author></Author>
+<Created>24/07/2020T13:29:09Z</Created>
+<Version>...</Version>
+</DocumentProperties>
+<ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+<ProtectStructure>False</ProtectStructure>
+<ProtectWindows>False</ProtectWindows>
+</ExcelWorkbook>
+<Styles>
+<Style ss:ID="s0">
+<Font ss:FontName="Tahoma" ss:Size="11" ss:Color="#000000" ss:Bold="1"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s1">
+<Font ss:FontName="Arial" ss:Size="16" ss:Color="#800000" ss:Bold="1"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s2">
+<Font ss:FontName="Tahoma" ss:Size="10" ss:Color="#000000" ss:Bold="1"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s3">
+<Font ss:FontName="Arial" ss:Size="8" ss:Color="#000000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s4">
+<Font ss:FontName="Arial" ss:Size="9" ss:Color="#000080" ss:Bold="1"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+<Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000" />
+</Borders>
+</Style>
+<Style ss:ID="s5">
+<Font ss:FontName="Arial" ss:Size="10" ss:Color="#000000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s6">
+<Font ss:FontName="Arial" ss:Size="8" ss:Color="#000000" ss:Bold="1"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s7">
+<Font ss:FontName="Arial" ss:Size="8" ss:Color="#000000" ss:Bold="1"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s8">
+<Font ss:FontName="Arial" ss:Size="8" ss:Color="#000000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s9">
+<Font ss:FontName="Arial" ss:Size="8" ss:Color="#FF0000" ss:Bold="1"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s10">
+<Font ss:FontName="Arial" ss:Size="8" ss:Color="#000080" ss:Bold="1"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+<Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000" />
+</Borders>
+</Style>
+<Style ss:ID="s11">
+<Font ss:FontName="Tahoma" ss:Size="8" ss:Color="#000000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s12">
+<Font ss:FontName="Arial" ss:Size="1" ss:Color="#000000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+<Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="3" ss:Color="#C0C0C0" />
+</Borders>
+</Style>
+<Style ss:ID="s13">
+<Font ss:FontName="Tahoma" ss:Size="8" ss:Color="#000000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s14">
+<Font ss:FontName="Tahoma" ss:Size="8" ss:Color="#000000"/>
+<Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+<Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+</Styles>
+<Worksheet ss:Name="Page 1">
+<Table ss:ExpandedColumnCount="10" ss:ExpandedRowCount="61" x:FullColumns="1" x:FullRows="1">
+<Column ss:AutoFitWidth="0" ss:Width="7.27"/>
+<Column ss:AutoFitWidth="0" ss:Width="74.13"/>
+<Column ss:AutoFitWidth="0" ss:Width="7.27"/>
+<Column ss:AutoFitWidth="0" ss:Width="110.47"/>
+<Column ss:AutoFitWidth="0" ss:Width="66.86"/>
+<Column ss:AutoFitWidth="0" ss:Width="66.86"/>
+<Column ss:AutoFitWidth="0" ss:Width="81.40"/>
+<Column ss:AutoFitWidth="0" ss:Width="93.75"/>
+<Column ss:AutoFitWidth="0" ss:Width="9.53"/>
+<Row ss:Height="13.81">
+<Cell ss:Index="1" ss:MergeAcross="8" ss:StyleID="s0" >
+<Data ss:Type="String">PT. SINAR MENTARI SAKTI</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="21.80">
+<Cell ss:Index="1" ss:MergeAcross="8" ss:StyleID="s1" >
+<Data ss:Type="String">Daftar Barang</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="13.08">
+<Cell ss:Index="1" ss:MergeAcross="8" ss:StyleID="s2" >
+<Data ss:Type="String">Per Tgl. 24 Jul 2020</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="21.80">
+<Cell ss:Index="1" ss:MergeAcross="8" ss:StyleID="s3" >
+<Data ss:Type="String">Filter berdasarkan :Kuantitas</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" ss:MergeAcross="1" ss:StyleID="s6" >
+<Data ss:Type="String">CVO</Data>
+</Cell>
+<Cell ss:Index="3" ss:MergeAcross="1" ss:StyleID="s6" >
+<Data ss:Type="String">CVO</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s7" >
+<Data ss:Type="String">8,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s7" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s6" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3376760</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">CRB TURBO 15W-40, 209L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">1,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3376766</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">CRB 40, 209L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">3,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3394410</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">VECTON 15W/40, 205 L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">4,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" ss:MergeAcross="1" ss:StyleID="s6" >
+<Data ss:Type="String">MCO2T</Data>
+</Cell>
+<Cell ss:Index="3" ss:MergeAcross="1" ss:StyleID="s6" >
+<Data ss:Type="String">MCO2T</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s7" >
+<Data ss:Type="String">12.471,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s7" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s6" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3371919</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">ACTIV 2T, 24X0.7L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">12.471,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">30.455,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" ss:MergeAcross="1" ss:StyleID="s6" >
+<Data ss:Type="String">MCO4T</Data>
+</Cell>
+<Cell ss:Index="3" ss:MergeAcross="1" ss:StyleID="s6" >
+<Data ss:Type="String">MCO4T</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s7" >
+<Data ss:Type="String">28.928,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s7" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s6" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3372200</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">GO 4T 20W40, 24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">1.500,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">34.636,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3372201</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">GO 4T 20W40, 24X0.8L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">5.146,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">28.818,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3374446</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">P1 RACING 4T 10W40 SL, 24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">6.609,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">94.546,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3376975</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">ACTIV 4T 20W50 SL, 24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">4,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">42.000,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3376976</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">ACTIV 4T 20W50 SL, 24X0.8L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">1.647,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">34.546,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3380562</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">ACTIV MATIC 4T 20W-40 12X0,8L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">2.239,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">35.727,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3380646</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">POWER1 4T 10W/40 SL PFM 24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">98,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">46.364,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3380647</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">POWER1 4T 10W40 SL PFM 24X0,8</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">7.430,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">38.909,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3383880</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">ACTIV MATIC 4T 10W-30 12X0,8L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">1.298,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">36.455,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3411865</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">SCTR GEAR OIL 8OW90 12X0.12L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">1.103,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">9.773,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3414322</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">P1 SCOOTER 4T 10W-40 24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">1.499,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">46.955,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3426221</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">POWER MATIC 10W-40  24X0,8L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">355,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" ss:MergeAcross="1" ss:StyleID="s6" >
+<Data ss:Type="String">PCO</Data>
+</Cell>
+<Cell ss:Index="3" ss:MergeAcross="1" ss:StyleID="s6" >
+<Data ss:Type="String">PCO</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s9" >
+<Data ss:Type="String">38.715,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s7" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s6" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s6" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3328310</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">GTX 2 20W50 SHCF, 24X1L -O- 24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">1.046,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3354540</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">TECTION F-TR  10W30     12X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">85,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">27.273,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3358840</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">TECTION F-TR  10W30  4X4L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">2.121,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">109.092,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3369699</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">GTX DIESEL 15W40 CH4, 6X4L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">1.478,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">196.227,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3369700</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">GTX DIESEL 15W40 CH4, 24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">3.494,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">50.455,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3370119</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">AXLE LIMITED SLIP 90 6X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">192,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">71.636,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3370222</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">ATF DEX III, 6X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">814,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">49.636,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3370376</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">AXLE GL-5 85W140, 6X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">935,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">48.000,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3370523</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">TRANSMAX MULTIVEHICLE, 6X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">892,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">74.455,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3374720</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">EDGE 5W40 SN, 24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">9,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">124.954,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3374723</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">EDGE 5W40 SN, 6X4L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">76,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3374825</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">BRAKE FLUID DOT 3, 12X0.5L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">1.857,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">40.818,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3374934</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">BRAKE FLUID DOT 4, 12X0.5L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">1.050,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">40.910,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3377822</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">MAGNATEC 10W40 SNCF, 209L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">3,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3377823</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">MAGNATEC 10W40 SNCF, 24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">3.410,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">76.818,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3381700</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">MAGNATEC S-S 10W30  6X4L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">162,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">328.272,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3381701</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">MAGNATEC S-S 10W-30  24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">84,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">85.364,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3382608</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">MAGNATEC DSL 10W30  6X4L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">22,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">304.091,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3382609</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">MAGNATEC DSL 10W-30  24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">432,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">77.000,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3383622</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">MANUAL GL4 80W-90,  24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">7.653,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">42.955,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3384803</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">MAG PRO 10W-30 24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">2.043,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3394871</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">MAG PRO A5 5W-30 24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">2.530,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">83.909,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3395678</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">MAGNATEC S-S, 5W30  24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">871,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">100.545,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3414210</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">MAG SS 0W-20,24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">445,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">117.727,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3414221</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">GTX 15W50, 24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">1,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">46.454,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3417098</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">TRANSMAX CVT   6X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">193,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">0,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3419605</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">GTX 15W40   24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">2.339,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">49.182,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3419606</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">GTX 15W40, 6X4L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">1.113,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">191.182,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3422529</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">MAGNATEC 10W-40 24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">1.190,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">71.591,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3422530</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">MAGNATEC 10W-40 6X4L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">685,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">282.546,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3422765</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">GTX ULTRACLEAN 5W30, 6X3,5L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">818,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">221.819,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" ss:StyleID="s8" >
+<Data ss:Type="String">3800001</Data>
+</Cell>
+<Cell ss:Index="3" />
+<Cell ss:Index="4" ss:StyleID="s8" >
+<Data ss:Type="String">NI FORMULA SLX SJCF, 24X1L -O- 24X1L</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="s3" >
+<Data ss:Type="String">672,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s3" >
+<Data ss:Type="String">122.363,00</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="s8" >
+<Data ss:Type="String">Persediaan</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="s8" >
+<Data ss:Type="String">Barang Lain-lain</Data>
+</Cell>
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" />
+<Cell ss:Index="2" />
+<Cell ss:Index="3" />
+<Cell ss:Index="4" />
+<Cell ss:Index="5" ss:StyleID="s10" >
+<Data ss:Type="String">80.122,00</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="s10" >
+<Data ss:Type="String">3.514.458,00</Data>
+</Cell>
+<Cell ss:Index="7" />
+<Cell ss:Index="8" />
+<Cell ss:Index="9" />
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" ss:MergeAcross="8" ss:StyleID="s12" >
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" ss:MergeAcross="8" ss:StyleID="s13" >
+<Data ss:Type="String">Cetak di 24 Jul 2020 - 13:11</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+<Row ss:Height="10.90">
+<Cell ss:Index="1" ss:MergeAcross="8" ss:StyleID="s14" >
+<Data ss:Type="String">(1)</Data>
+</Cell>
+<Cell ss:Index="10" />
+</Row>
+</Table>
+<WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+<PageSetup>
+<PageMargins x:Bottom="0.38" x:Left="0.38" x:Right="0.38" x:Top="0.38"/>
+</PageSetup>
+</WorksheetOptions>
+</Worksheet>
+</Workbook>

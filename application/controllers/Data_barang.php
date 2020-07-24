@@ -32,10 +32,7 @@ class Data_barang extends CI_Controller {
     if (isset($_POST['submit'])) {
       $params = array(
         'kd_barang' => $this->input->post('kd_barang'),
-        'nama_barang' => strtoupper($this->input->post('nama_barang')),
-        'alamat' => strtoupper($this->input->post('alamat')),
-        'no_telepon' => $this->input->post('no_telepon'),
-        'geolocation' => $this->input->post('geolocation')
+        'nama_barang' => strtoupper($this->input->post('nama_barang'))
       );
       $update = $this->data_barang_model->update($params);
 
@@ -69,10 +66,11 @@ class Data_barang extends CI_Controller {
       $allowedFileType = ['application/vnd.ms-excel','text/plain','text/csv','text/tsv'];
       if (in_array($_FILES['userfile']['type'], $allowedFileType)) {
         $dir = 'uploads/barang/';
-        $file = $dir . time();
-        if (move_uploaded_file($_FILES['userfile']['tmp_name'], $file . '.xls')) {
-          convertXLStoCSV($file . '.xls', $file . '.csv');
-          if (strpos(file_get_contents($file . '.csv'), 'Daftar barang') !== false)
+        $file = $dir . time() . '.xls';
+        $output = $dir . 'output.csv';
+        if (move_uploaded_file($_FILES['userfile']['tmp_name'], $file)) {
+          convertXLStoCSV($file, $output);
+          if (strpos(file_get_contents($output), '"Daftar Barang","","","","","","","",""') !== false)
           {
             $import = $this->data_barang_model->import();
             if ($import) {

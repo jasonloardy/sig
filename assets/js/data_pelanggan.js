@@ -3,6 +3,7 @@ $(document).ready(function() {
 });
 
 let token = 'pk.eyJ1IjoiamFzb25sb2FyZHkiLCJhIjoiY2ticHkwYTJzMGQyMTJva2F1ZzFubDc2cyJ9.hVSZAbuxC_SDI7sCl2tkyA';
+let tokenGmaps = 'AIzaSyB1HBqMYvcjI161URlIQ96gkmiPlSYPpyc';
 
 function tabel_pelanggan() {
   $('#tabel_pelanggan').DataTable({
@@ -105,9 +106,15 @@ function map_pelanggan(geo) {
 }
 
 function get_alamat(geolocation) {
-  $.getJSON("https://api.mapbox.com/geocoding/v5/mapbox.places/" + geolocation + ".json?access_token=" + token, function(data){
-    // console.log(data.features[0].properties.address);
-    $('#alamat').val(data.features[0].properties.address);
+  // API Mapbox
+  // $.getJSON("https://api.mapbox.com/geocoding/v5/mapbox.places/" + geolocation + ".json?access_token=" + token, function(data){
+  //   $('#alamat').val(data.features[0].properties.address);
+  // });
+
+  // API Google Maps
+  var geolocation = geolocation.split(', ');
+  $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?latlng="+ geolocation[1] +","+ geolocation[0] + "&key=" + tokenGmaps, function(data){
+    $('#alamat').val(data.results[0].formatted_address);
   });
 }
 

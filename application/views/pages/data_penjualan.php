@@ -4,57 +4,28 @@
 <div class="container-fluid">
 
   <!-- Page Heading -->
-  <h1 class="h3 mb-2 text-gray-800">Data barang</h1>
+  <h1 class="h3 mb-2 text-gray-800">Data penjualan</h1>
   <hr>
 
   <div class="modal fade" id="importModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="importModalLabel">Import Data barang</h5>
+          <h5 class="modal-title" id="importModalLabel">Import Data penjualan</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form action="data_barang/import" method="post" enctype="multipart/form-data">
+        <form action="data_penjualan/import" method="post" enctype="multipart/form-data">
           <div class="modal-body">
             <div class="form-group">
-              <label for="userfile">File CSV barang</label>
+              <label for="userfile">File CSV penjualan</label>
               <input type="file" class="form-control-file" id="userfile" name="userfile">
             </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="submit" class="btn btn-primary" name="submit">Upload Data</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="barangModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="barangModalLabel">Detail barang</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <form action="data_barang/update" method="post" enctype="multipart/form-data">
-          <div class="modal-body">
-            <div class="form-group">
-              <label for="kodebarang">Kode barang</label>
-              <input type="text" class="form-control" id="kodebarang" name="kd_barang" readonly>
-            </div>
-            <div class="form-group">
-              <label for="namabarang">Nama barang</label>
-              <input type="text" class="form-control" id="namabarang" name="nama_barang">
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary" name="submit">Update Data</button>
           </div>
         </form>
       </div>
@@ -89,15 +60,15 @@
   <!-- DataTales Example -->
   <div class="card shadow mb-4 mt-3">
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary">Daftar barang</h6>
+      <h6 class="m-0 font-weight-bold text-primary">Daftar penjualan</h6>
     </div>
     <div class="card-body">
       <div class="table-responsive">
-        <table class="table table-bordered" id="tabel_barang" width="100%" cellspacing="0">
+        <table class="table table-bordered" id="tabel_penjualan" width="100%" cellspacing="0">
           <thead>
             <tr>
-              <th>Kode barang</th>
-              <th>Nama barang</th>
+              <th>Kode penjualan</th>
+              <th>Nama penjualan</th>
             </tr>
           </thead>
         </table>
