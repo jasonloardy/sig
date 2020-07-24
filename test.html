@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Add a geocoder</title>
+<title>Add a GeoJSON polygon</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
@@ -12,45 +12,67 @@
 </style>
 </head>
 <body>
-<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
-<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css" type="text/css" />
-<!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
-<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
 <div id="map"></div>
-
+<script src="assets/template/sb-admin-2/vendor/jquery/jquery.min.js"></script>
 <script>
-	// TO MAKE THE MAP APPEAR YOU MUST
-	// ADD YOUR ACCESS TOKEN FROM
-	// https://account.mapbox.com
-	mapboxgl.accessToken = 'pk.eyJ1IjoiamFzb25sb2FyZHkiLCJhIjoiY2ticHkwYTJzMGQyMTJva2F1ZzFubDc2cyJ9.hVSZAbuxC_SDI7sCl2tkyA';
-	var map = new mapboxgl.Map({
-		container: 'map',
-		style: 'mapbox://styles/mapbox/streets-v11',
-		center: [119.423790, -5.135399],
-		zoom: 13
+	$(document).ready(function() {
+		get_kabupaten();
+		// map();
 	});
 
-	var geocoder = new MapboxGeocoder({ accessToken: mapboxgl.accessToken,
-																			mapboxgl: mapboxgl
-	});
+	function get_kabupaten() {
+		$.getJSON('assets/geojson/INDONESIA_KAB.json')
+    .done(function(data) {
+      map(data);
+			// console.log(data);
+    })
+	}
 
-	map.addControl(geocoder);
+	function map(geojson) {
+		mapboxgl.accessToken = 'pk.eyJ1IjoiamFzb25sb2FyZHkiLCJhIjoiY2ticHkwYTJzMGQyMTJva2F1ZzFubDc2cyJ9.hVSZAbuxC_SDI7sCl2tkyA';
+	    var map = new mapboxgl.Map({
+	        container: 'map',
+	        style: 'mapbox://styles/mapbox/streets-v11',
+	        center: [-68.13734351262877, 45.137451890638886],
+	        zoom: 5
+	    });
 
-	geocoder.on('result', function(e) {
-	  console.log(e.result.center[0] + ', ' + e.result.center[1]);
-	  geocoder.clear();
-	  var marker = new mapboxgl.Marker({ draggable: true, color: "pink" })
-	    .setLngLat(e.result.center)
-	    .addTo(map);
+	    // map.on('load', function() {
+	    //     map.addSource('maine', {
+	    //         'type': 'geojson',
+	    //         'data': geojson
+	    //     });
+	    //     map.addLayer({
+	    //         'id': 'maine',
+	    //         'type': 'fill',
+	    //         'source': 'maine',
+	    //         'layout': {},
+	    //         'paint': {
+	    //             'fill-color': '#088',
+	    //             'fill-opacity': 0.8
+	    //         }
+	    //     });
+	    // });
 
-		function onDragEnd() {
-			var lngLat = marker.getLngLat();
-			console.log(lngLat.lng + ', ' + lngLat.lat);
-		}
-
-		marker.on('dragend', onDragEnd);
-	});
+			map.on('load', function() {
+				map.addLayer({
+				    'id': 'states-layer',
+				    'type': 'fill',
+				    'source': {
+				        'type': 'geojson',
+				        'data': 'assets/geojson/INDONESIA_KAB.json'
+				    },
+				    'paint': {
+				        'fill-color': {
+				            type: 'identity',
+				            property: 'color',
+				        },
+								'fill-opacity': 0.5,
+				        'fill-outline-color': 'rgba(200, 100, 240, 1)'
+				    }
+				});
+			});
+	}
 </script>
 
 </body>

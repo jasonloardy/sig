@@ -19,7 +19,7 @@
         <form action="data_pelanggan/import" method="post" enctype="multipart/form-data">
           <div class="modal-body">
             <div class="form-group">
-              <label for="userfile">File CSV Pelanggan</label>
+              <label for="userfile">Pilih File Pelanggan</label>
               <input type="file" class="form-control-file" id="userfile" name="userfile">
             </div>
           </div>
@@ -117,13 +117,13 @@
     <div class="card-body">
       <div class="table-responsive">
         <table class="table table-bordered" id="tabel_pelanggan" width="100%" cellspacing="0">
-          <thead>
+          <thead class="text-center">
             <tr>
-              <th>Kode Pelanggan</th>
-              <th>Nama Pelanggan</th>
-              <th>Alamat</th>
-              <th>Geolocation</th>
-              <th>No. Telepon</th>
+              <th width="15%">Kode Pelanggan</th>
+              <th width="25%">Nama Pelanggan</th>
+              <th width="30%">Alamat</th>
+              <th width="15%">Geolocation</th>
+              <th width="15%">No. Telepon</th>
             </tr>
           </thead>
         </table>

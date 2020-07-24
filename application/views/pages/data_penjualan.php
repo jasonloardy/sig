@@ -1,17 +1,27 @@
 <?php $this->load->view('_layout/header') ?>
 
+<style>
+  td.details-control {
+    background: url('assets/img/details_open.png') no-repeat center center;
+    cursor: pointer;
+  }
+  tr.shown td.details-control {
+    background: url('assets/img/details_close.png') no-repeat center center;
+  }
+</style>
+
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
   <!-- Page Heading -->
-  <h1 class="h3 mb-2 text-gray-800">Data penjualan</h1>
+  <h1 class="h3 mb-2 text-gray-800">Data Penjualan</h1>
   <hr>
 
   <div class="modal fade" id="importModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="importModalLabel">Import Data penjualan</h5>
+          <h5 class="modal-title" id="importModalLabel">Import Data Penjualan</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -19,7 +29,7 @@
         <form action="data_penjualan/import" method="post" enctype="multipart/form-data">
           <div class="modal-body">
             <div class="form-group">
-              <label for="userfile">File CSV penjualan</label>
+              <label for="userfile">Pilih File Penjualan</label>
               <input type="file" class="form-control-file" id="userfile" name="userfile">
             </div>
           </div>
@@ -39,18 +49,18 @@
     <span class="text">Import Data</span>
   </button>
 
-  <?php if ($this->session->flashdata('brgOk')) { ?>
+  <?php if ($this->session->flashdata('pjlOk')) { ?>
   <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
-    <strong><?= $this->session->flashdata('brgOk') ?></strong>
+    <strong><?= $this->session->flashdata('pjlOk') ?></strong>
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
   <?php } ?>
 
-  <?php if ($this->session->flashdata('brgError')) { ?>
+  <?php if ($this->session->flashdata('pjlError')) { ?>
   <div class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
-    <strong><?= $this->session->flashdata('brgError') ?></strong>
+    <strong><?= $this->session->flashdata('pjlError') ?></strong>
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
@@ -60,15 +70,19 @@
   <!-- DataTales Example -->
   <div class="card shadow mb-4 mt-3">
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary">Daftar penjualan</h6>
+      <h6 class="m-0 font-weight-bold text-primary">Daftar Penjualan</h6>
     </div>
     <div class="card-body">
       <div class="table-responsive">
         <table class="table table-bordered" id="tabel_penjualan" width="100%" cellspacing="0">
-          <thead>
+          <thead class="text-center">
             <tr>
-              <th>Kode penjualan</th>
-              <th>Nama penjualan</th>
+              <th></th>
+              <th>Kode Invoice</th>
+              <th>Tanggal</th>
+              <th>Pelanggan</th>
+              <th>Diskon (%)</th>
+              <th class="text-center">Total Faktur</th>
             </tr>
           </thead>
         </table>
