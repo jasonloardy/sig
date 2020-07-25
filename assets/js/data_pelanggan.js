@@ -7,6 +7,7 @@ let tokenGmaps = 'AIzaSyB1HBqMYvcjI161URlIQ96gkmiPlSYPpyc';
 
 function tabel_pelanggan() {
   $('#tabel_pelanggan').DataTable({
+    stateSave: true,
     "ajax" : {
       "url" : "data_pelanggan/json_all",
       "dataSrc" : ""
@@ -15,7 +16,7 @@ function tabel_pelanggan() {
       { "data" : "kd_pelanggan" },
       { "data" : "nama_pelanggan",
         "render" : function (data, type, row) {
-          return '<a href="#" onclick="detail(\'' + row.kd_pelanggan + '\', \'' + row.nama_pelanggan + '\', \'' + row.alamat + '\', \'' + row.no_telepon + '\', \'' + row.geolocation + '\')">' + data + '</a>';
+          return '<a href="#" onclick="detail(\'' + row.kd_pelanggan + '\', \'' + row.nama_pelanggan + '\', \'' + row.alamat + '\', \'' + row.kd_kabupaten + '\', \'' + row.no_telepon + '\', \'' + row.geolocation + '\')">' + data + '</a>';
         } },
       { "data" : "alamat" },
       { "data" : "geolocation" },
@@ -24,15 +25,20 @@ function tabel_pelanggan() {
   });
 }
 
-function detail(id, nama, alamat, telepon, geolocation) {
+function detail(id, nama, alamat, kabupaten, telepon, geolocation) {
   $('#kodePelanggan').val(id);
   $('#namaPelanggan').val(nama);
-  $('#noTelepon').val(telepon);
+  if (telepon == 'null') {
+    $('#noTelepon').val('');
+  } else {
+    $('#noTelepon').val(telepon);
+  }
   if (alamat == 'null') {
     $('#alamat').val('');
   } else {
     $('#alamat').val(alamat);
   }
+  $('select').val(kabupaten);
   if (geolocation == 'null') {
     $('#geolocation').val('');
   } else {
@@ -45,7 +51,7 @@ function detail(id, nama, alamat, telepon, geolocation) {
 
 function map_pelanggan(geo) {
   var geo_map, zoom;
-  if (geo == 'null') {
+  if (geo == 'null' || geo == '') {
     geo_map = '119.423790, -5.135399';
     zoom = 13;
   } else {
@@ -66,7 +72,7 @@ function map_pelanggan(geo) {
 
   var marker = new mapboxgl.Marker({ draggable: true });
 
-  if (geo != 'null') {
+  if (geo != 'null' && geo != '') {
     marker.setLngLat(geo_map.split(',')).addTo(map);
   }
 
@@ -107,15 +113,31 @@ function map_pelanggan(geo) {
 
 function get_alamat(geolocation) {
   // API Mapbox
-  // $.getJSON("https://api.mapbox.com/geocoding/v5/mapbox.places/" + geolocation + ".json?access_token=" + token, function(data){
-  //   $('#alamat').val(data.features[0].properties.address);
-  // });
+  $.getJSON("https://api.mapbox.com/geocoding/v5/mapbox.places/" + geolocation + ".json?access_token=" + token, function(data){
+    if ($('#alamat').val() == '') {
+      $('#alamat').val(data.features[0].properties.address);
+    }
+    var indexKabupaten = data.features[0].context.findIndex(x => x.id.indexOf('place') != -1);
+    var kabupaten = data.features[0].context[indexKabupaten].text.toUpperCase();
+    kabupaten = kabupaten.replace('KABUPATEN ', '');
+    kabupaten = kabupaten.replace('KOTA ', '');
+    $("select").val($("select option:first").val());
+    $('select option:contains("'+kabupaten+'")').attr('selected', true);
+  });
 
   // API Google Maps
-  var geolocation = geolocation.split(', ');
-  $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?latlng="+ geolocation[1] +","+ geolocation[0] + "&key=" + tokenGmaps, function(data){
-    $('#alamat').val(data.results[0].formatted_address);
-  });
+  // var geolocation = geolocation.split(', ');
+  // $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?latlng="+ geolocation[1] +","+ geolocation[0] + "&key=" + tokenGmaps, function(data){
+  //   if ($('#alamat').val() == '') {
+  //     $('#alamat').val(data.results[0].formatted_address);
+  //   }
+  //   var indexKabupaten = data.results[0].address_components.findIndex(x => x.types[0] === 'administrative_area_level_2');
+  //   var kabupaten = data.results[0].address_components[indexKabupaten].long_name.toUpperCase();
+  //   kabupaten = kabupaten.replace('KABUPATEN ', '');
+  //   kabupaten = kabupaten.replace('KOTA ', '');
+  //   $("select").val($("select option:first").val());
+  //   $('select option:contains("'+kabupaten+'")').attr('selected', true);
+  // });
 }
 
 function get_googleMaps() {

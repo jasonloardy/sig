@@ -60,6 +60,15 @@
               <input type="text" class="form-control" id="alamat" name="alamat">
             </div>
             <div class="form-group">
+              <label for="kabupaten">Wilayah</label>
+              <select class="form-control" id="kabupaten" name="kabupaten">
+                <option value=""></option>
+                <?php foreach ($kabupaten as $k): ?>
+                  <option value="<?= $k->kd_kabupaten ?>"><?= $k->nama_kabupaten ?></option>
+                <?php endforeach; ?>
+              </select>
+            </div>
+            <div class="form-group">
               <label for="geolocation">Geolocation</label>
               <input type="text" class="form-control" id="geolocation" name="geolocation" readonly>
             </div>

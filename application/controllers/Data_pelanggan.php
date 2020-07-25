@@ -16,7 +16,8 @@ class Data_pelanggan extends CI_Controller {
 	public function index()
 	{
     $data = array(
-      'title' => 'Data Pelanggan'
+      'title' => 'Data Pelanggan',
+      'kabupaten' => $this->data_pelanggan_model->all_kabupaten()
     );
     $this->load->view('pages/data_pelanggan', $data);
 	}
@@ -34,6 +35,7 @@ class Data_pelanggan extends CI_Controller {
         'kd_pelanggan' => $this->input->post('kd_pelanggan'),
         'nama_pelanggan' => strtoupper($this->input->post('nama_pelanggan')),
         'alamat' => strtoupper($this->input->post('alamat')),
+        'kd_kabupaten' => $this->input->post('kabupaten'),
         'no_telepon' => $this->input->post('no_telepon'),
         'geolocation' => $this->input->post('geolocation')
       );

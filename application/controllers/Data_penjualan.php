@@ -147,8 +147,6 @@ class Data_penjualan extends CI_Controller {
           $arrayData = xmlToArray($xmlNode);
           $invoice = $arrayData['NMEXML']['TRANSACTIONS']['SALESINVOICE'];
 
-          echo json_encode($invoice);
-
           $insert = $this->data_penjualan_model->insert($invoice);
           if ($insert) {
             $this->session->set_flashdata('pjlOk', 'Data Berhasil di-Import!');
@@ -161,7 +159,7 @@ class Data_penjualan extends CI_Controller {
       } else {
         $this->session->set_flashdata('pjlError', 'Ekstensi File Salah!');
       }
-      // redirect('/data_penjualan', 'refresh');
+      redirect('/data_penjualan', 'refresh');
     }
   }
 

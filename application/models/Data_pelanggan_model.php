@@ -9,6 +9,12 @@ class Data_pelanggan_model extends CI_Model {
     return $this->db->query($sql)->result();
 	}
 
+	public function all_kabupaten()
+	{
+		$sql = "SELECT * FROM tb_kabupaten";
+    return $this->db->query($sql)->result();
+	}
+
 	public function update($params)
 	{
 		$this->db->where('kd_pelanggan', $params['kd_pelanggan']);
@@ -32,13 +38,23 @@ eof;
 
 	public function insert()
 	{
-		$sql = "INSERT INTO tb_pelanggan
-						SELECT * FROM tb_pelanggan_temp tpt
-						WHERE tpt.kd_pelanggan NOT IN
-						(SELECT tp.kd_pelanggan FROM tb_pelanggan tp)
-						AND tpt.kd_pelanggan <> ''";
+		$sql_insert = "INSERT INTO tb_pelanggan
+										SELECT * FROM tb_pelanggan_temp tpt
+										WHERE tpt.kd_pelanggan NOT IN
+										(SELECT tp.kd_pelanggan FROM tb_pelanggan tp)
+										AND tpt.kd_pelanggan <> ''";
+		$sql_update = "UPDATE tb_pelanggan tp
+										INNER JOIN tb_pelanggan_temp tpt ON tp.kd_pelanggan = tpt.kd_pelanggan
+										SET tp.no_telepon = tpt.no_telepon";
 
-    return $this->db->query($sql);
+		$this->db->trans_start();
+
+		$this->db->query($sql_insert);
+		$this->db->query($sql_update);
+
+		$this->db->trans_complete();
+
+    return $this->db->trans_status();
 	}
 
 	public function truncate_temp()

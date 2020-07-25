@@ -56,6 +56,12 @@
           <span>Data Penjualan</span></a>
       </li>
 
+      <li class="nav-item <?= ($segment == 'data_kabupaten') ? 'active' : '' ?>">
+        <a class="nav-link" href="<?= base_url() ?>data_kabupaten">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Data Kabupaten</span></a>
+      </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
