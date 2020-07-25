@@ -16,16 +16,19 @@ class Data_kabupaten extends CI_Controller {
 	public function index()
 	{
     $data = array(
-      'title' => 'Data kabupaten'
+      'title' => 'Data Kabupaten'
     );
     $this->load->view('pages/data_kabupaten', $data);
 	}
 
   public function json_all()
   {
-    // $all_kabupaten = $this->data_kabupaten_model->all_kabupaten();
-    // echo json_encode($all_kabupaten);
+    $all_kabupaten = $this->data_kabupaten_model->all_kabupaten();
+    echo json_encode($all_kabupaten);
+  }
 
+  public function geojson()
+  {
     $response['type'] = 'FeatureCollection';
 
     $kabupaten = $this->data_kabupaten_model->all_kabupaten();
@@ -60,11 +63,11 @@ class Data_kabupaten extends CI_Controller {
         case (($jumlah > 5000000) && ($jumlah <= 10000000)):
           $color = '#ffce00';
           break;
-        case ($jumlah >0):
+        case ($jumlah > 0):
           $color = '#f0ff00';
           break;
         default:
-          $color = "#fff";
+          $color = "#ffffff";
           break;
       }
       $response['features'][$i]['properties']['color'] = $color;

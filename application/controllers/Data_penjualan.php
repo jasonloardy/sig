@@ -16,7 +16,7 @@ class Data_penjualan extends CI_Controller {
 	public function index()
 	{
     $data = array(
-      'title' => 'Data penjualan'
+      'title' => 'Data Penjualan'
     );
     $this->load->view('pages/data_penjualan', $data);
 	}

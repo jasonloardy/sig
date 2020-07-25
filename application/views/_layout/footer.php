@@ -5,7 +5,7 @@
 <footer class="sticky-footer bg-white">
   <div class="container my-auto">
     <div class="copyright text-center my-auto">
-      <span>Copyright &copy; SIG Survei 2020</span>
+      <span>Copyright &copy; SIG PENJUALAN PT. SINAR MENTARI SAKTI 2020</span>
     </div>
   </div>
 </footer>
@@ -80,12 +80,11 @@ if ($(window).width() <= 768) {
     case 'data_penjualan':
       echo '<script src="'. base_url() .'assets/js/data_penjualan.js"></script>';
       break;
-    case 'respon_survei':
-      if ($this->uri->segment(2) == 'detail') {
-        echo '<script src="'. base_url() .'assets/js/detail_survei.js"></script>';
-      } else {
-        echo '<script src="'. base_url() .'assets/js/respon_survei.js"></script>';
-      }
+    case 'data_kabupaten':
+      echo '<script src="'. base_url() .'assets/js/data_kabupaten.js"></script>';
+      break;
+    case 'peta_penjualan':
+      echo '<script src="'. base_url() .'assets/js/peta_penjualan.js"></script>';
       break;
     default:
       break;

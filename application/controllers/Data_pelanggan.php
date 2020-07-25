@@ -28,6 +28,41 @@ class Data_pelanggan extends CI_Controller {
     echo json_encode($all_pelanggan);
   }
 
+  public function geojson()
+  {
+    $response['type'] = 'FeatureCollection';
+
+    $pelanggan = $this->data_pelanggan_model->all_pelanggan_penjualan();
+
+    $i = 0;
+    foreach ($pelanggan as $p) {
+      $jumlah = 0;
+
+      $response['features'][$i]['type'] = 'Feature';
+			$response['features'][$i]['geometry']['type'] = 'Point';
+      $response['features'][$i]['geometry']['coordinates'] = explode(', ', $p->geolocation);
+
+      $response['features'][$i]['properties']['nama_pelanggan'] = $p->nama_pelanggan;
+
+      $penjualan = $this->data_pelanggan_model->detail_penjualan($p->kd_pelanggan);
+
+      $order = 0;
+      foreach ($penjualan as $p) {
+        $order++;
+        $setelah_diskon = $p->subtotal - ($p->subtotal * $p->diskon / 100);
+        $setelah_pajak = $setelah_diskon + ($setelah_diskon * 0.1);
+        $jumlah += intval($setelah_pajak);
+      }
+
+      $response['features'][$i]['properties']['total_order'] = $order;
+      $response['features'][$i]['properties']['total_penjualan'] = $jumlah;
+
+      $i++;
+    }
+
+    echo json_encode($response);
+  }
+
   public function update()
   {
     if (isset($_POST['submit'])) {

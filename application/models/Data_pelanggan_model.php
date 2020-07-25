@@ -15,6 +15,24 @@ class Data_pelanggan_model extends CI_Model {
     return $this->db->query($sql)->result();
 	}
 
+	public function all_pelanggan_penjualan()
+	{
+		$sql = "SELECT * FROM tb_pelanggan tp
+						WHERE tp.geolocation IS NOT NULL";
+    return $this->db->query($sql)->result();
+	}
+
+	public function detail_penjualan($id)
+	{
+		$sql = "SELECT ti.kd_invoice, IFNULL(ti.diskon, 0) diskon, SUM(qty*harga) subtotal
+						FROM tb_invoice ti
+						JOIN tb_invoice_detail tid ON ti.kd_invoice = tid.kd_invoice
+						JOIN tb_pelanggan tp ON ti.kd_pelanggan = tp.kd_pelanggan
+						WHERE tp.kd_pelanggan = '$id'
+						GROUP BY ti.kd_invoice";
+		return $this->db->query($sql)->result();
+	}
+
 	public function update($params)
 	{
 		$this->db->where('kd_pelanggan', $params['kd_pelanggan']);

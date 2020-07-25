@@ -44,11 +44,15 @@
         <form action="data_kabupaten/update" method="post" enctype="multipart/form-data">
           <div class="modal-body">
             <div class="form-group">
-              <label for="kodekabupaten">Kode kabupaten</label>
+              <label for="kodekabupaten">Kode Kabupaten</label>
               <input type="text" class="form-control" id="kodekabupaten" name="kd_kabupaten" readonly>
             </div>
             <div class="form-group">
-              <label for="namakabupaten">Nama kabupaten</label>
+              <label for="kodekabupaten">Provinsi</label>
+              <input type="text" class="form-control" id="provinsi" name="provinsi" readonly>
+            </div>
+            <div class="form-group">
+              <label for="namakabupaten">Nama Kabupaten</label>
               <input type="text" class="form-control" id="namakabupaten" name="nama_kabupaten">
             </div>
           </div>
@@ -89,15 +93,16 @@
   <!-- DataTales Example -->
   <div class="card shadow mb-4 mt-3">
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary">Daftar kabupaten</h6>
+      <h6 class="m-0 font-weight-bold text-primary">Daftar Kabupaten</h6>
     </div>
     <div class="card-body">
       <div class="table-responsive">
         <table class="table table-bordered" id="tabel_kabupaten" width="100%" cellspacing="0">
           <thead class="text-center">
             <tr>
-              <th>Kode kabupaten</th>
-              <th>Nama kabupaten</th>
+              <th>Kode Kabupaten</th>
+              <th>Provinsi</th>
+              <th>Nama Kabupaten</th>
             </tr>
           </thead>
         </table>

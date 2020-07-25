@@ -16,7 +16,7 @@ class Data_barang extends CI_Controller {
 	public function index()
 	{
     $data = array(
-      'title' => 'Data barang'
+      'title' => 'Data Barang'
     );
     $this->load->view('pages/data_barang', $data);
 	}

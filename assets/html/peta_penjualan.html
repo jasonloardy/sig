@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
+<style>
+	body { margin: 0; padding: 0; }
+	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+	.legend {
+		background-color: #fff;
+		border-radius: 3px;
+		bottom: 30px;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+		font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		padding: 10px;
+		position: absolute;
+		right: 10px;
+		z-index: 1;
+	}
+
+	.legend h4 {
+		margin: 0 0 10px;
+	}
+
+	.legend div span {
+		border: 1px solid black;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;
+		margin-right: 5px;
+		width: 10px;
+	}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="state-legend" class="legend">
+	<input type="checkbox" id="pelanggan"><label for="pelanggan"> <b>Tampilkan Pelanggan</b></label><hr>
+	<h4>Penjualan (Rupiah)</h4>
+	<div><span style="background-color: rgb(255,0,0,0.7)"></span>> 20,000,000</div>
+	<div><span style="background-color: rgb(255,90,0,0.7)"></span>15,000,001 - 20,000,000</div>
+	<div><span style="background-color: rgb(255,154,0,0.7)"></span>10,000,001 - 15,000,000</div>
+	<div><span style="background-color: rgb(255,206,0,0.7)"></span>5,000,001 - 10,000,000</div>
+	<div><span style="background-color: rgb(240,255,0,0.7)"></span>1 - 5,000,000</div>
+	<div><span style="background-color: #ffffff"></span>0</div>
+</div>
+<script src="../template/sb-admin-2/vendor/jquery/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		map();
+	});
+
+	var isPelanggan = false;
+
+	function addCommas(nStr) {
+		nStr += '';
+		x = nStr.split('.');
+		x1 = x[0];
+		x2 = '';
+		var rgx = /(\d+)(\d{3})/;
+		while (rgx.test(x1)) {
+			x1 = x1.replace(rgx, '$1' + '.' + '$2');
+		}
+		return x1 + x2;
+	}
+
+	function map() {
+		mapboxgl.accessToken = 'pk.eyJ1IjoiamFzb25sb2FyZHkiLCJhIjoiY2ticHkwYTJzMGQyMTJva2F1ZzFubDc2cyJ9.hVSZAbuxC_SDI7sCl2tkyA';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [121.229594, -2.058725],
+      zoom: 5.75
+    });
+
+		map.on('load', function() {
+			// map.addLayer({
+		  //   'id': 'pelanggan-layer',
+		  //   'type': 'point',
+		  //   'source': {
+	    //     'type': 'geojson',
+	    //     'data': '../../data_pelanggan/geojson'
+		  //   }
+			// });
+
+			map.loadImage('../img/marker.png',
+				function(error, image) {
+					if (error) throw error;
+					map.addImage('marker', image);
+
+					map.addLayer({
+						'id': 'points',
+						'type': 'symbol',
+						'source': {
+							'type': 'geojson',
+							'data': '../../data_pelanggan/geojson'
+							},
+						'layout': {
+							'visibility': 'none',
+							'icon-image': 'marker',
+							'icon-size': 1,
+							'icon-allow-overlap': true
+							}
+					});
+				}
+			);
+
+			map.addLayer({
+		    'id': 'states-layer',
+		    'type': 'fill',
+		    'source': {
+	        'type': 'geojson',
+	        'data': '../../data_kabupaten/geojson'
+		    },
+		    'paint': {
+	        'fill-color': {
+	            type: 'identity',
+	            property: 'color',
+	        },
+					'fill-opacity': 0.7,
+	        'fill-outline-color': 'rgba(200, 100, 240, 1)'
+		    }
+			});
+
+			map.on('click', 'points', function(e) {
+				new mapboxgl.Popup()
+				.setLngLat(e.lngLat)
+				.setHTML(e.features[0].properties.nama_pelanggan + '<br>Jumlah Order : ' + e.features[0].properties.total_order +
+				 '<br>Total : Rp. ' + addCommas(e.features[0].properties.total_penjualan))
+				.addTo(map);
+			});
+
+			// When a click event occurs on a feature in the states layer, open a popup at the
+			// location of the click, with description HTML from its properties.
+			map.on('click', 'states-layer', function(e) {
+				if (isPelanggan == false) {
+					new mapboxgl.Popup()
+					.setLngLat(e.lngLat)
+					.setHTML('<center>' + e.features[0].properties.Kabupaten_ + '<br>Rp. ' + addCommas(e.features[0].properties.total_faktur) + '</center>')
+					.addTo(map);
+				}
+			});
+
+			// Change the cursor to a pointer when the mouse is over the states layer.
+			map.on('mouseenter', 'states-layer', function() {
+				map.getCanvas().style.cursor = 'pointer';
+			});
+
+			// Change it back to a pointer when it leaves.
+			map.on('mouseleave', 'states-layer', function() {
+				map.getCanvas().style.cursor = '';
+			});
+		});
+
+		$("#pelanggan").click( function(){
+		   if ($(this).is(':checked')) {
+				 isPelanggan = true;
+				 map.setLayoutProperty('points', 'visibility', 'visible');
+			 } else {
+				 isPelanggan = false;
+				 map.setLayoutProperty('points', 'visibility', 'none');
+			 }
+		});
+	}
+</script>
+
+</body>
+</html>

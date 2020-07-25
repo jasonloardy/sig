@@ -24,8 +24,22 @@
       <!-- Nav Item - Dashboard -->
       <li class="nav-item <?= ($segment == 'dashboard') ? 'active' : '' ?>">
         <a class="nav-link" href="<?= base_url() ?>dashboard">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <i class="fas fa-fw fa-home"></i>
           <span>Dashboard</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        GEOGRAFIS
+      </div>
+
+      <li class="nav-item <?= ($segment == 'peta_penjualan') ? 'active' : '' ?>">
+        <a class="nav-link" href="<?= base_url() ?>peta_penjualan">
+          <i class="fas fa-fw fa-globe"></i>
+          <span>Peta Penjualan</span></a>
       </li>
 
       <!-- Divider -->
@@ -46,19 +60,19 @@
       <!-- Nav Item - Tables -->
       <li class="nav-item <?= ($segment == 'data_pelanggan') ? 'active' : '' ?>">
         <a class="nav-link" href="<?= base_url() ?>data_pelanggan">
-          <i class="fas fa-fw fa-chart-area"></i>
+          <i class="fas fa-fw fa-address-card"></i>
           <span>Data Pelanggan</span></a>
       </li>
 
       <li class="nav-item <?= ($segment == 'data_penjualan') ? 'active' : '' ?>">
         <a class="nav-link" href="<?= base_url() ?>data_penjualan">
-          <i class="fas fa-fw fa-chart-area"></i>
+          <i class="fas fa-fw fa-handshake"></i>
           <span>Data Penjualan</span></a>
       </li>
 
       <li class="nav-item <?= ($segment == 'data_kabupaten') ? 'active' : '' ?>">
         <a class="nav-link" href="<?= base_url() ?>data_kabupaten">
-          <i class="fas fa-fw fa-chart-area"></i>
+          <i class="fas fa-fw fa-map"></i>
           <span>Data Kabupaten</span></a>
       </li>
 
