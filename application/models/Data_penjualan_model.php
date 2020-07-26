@@ -3,13 +3,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Data_penjualan_model extends CI_Model {
 
-	public function all_penjualan()
+	public function all_penjualan($from, $to)
 	{
 		$sql = "SELECT tb.kd_invoice, tb.tanggal, CONCAT_WS(' - ', tp.kd_pelanggan, tp.nama_pelanggan) pelanggan,
 						IFNULL(tb.diskon, 0) diskon
 						FROM tb_invoice tb
 						JOIN tb_pelanggan tp ON tb.kd_pelanggan = tp.kd_pelanggan
-						GROUP BY tb.kd_invoice";
+						WHERE (tanggal BETWEEN '$from' and '$to')
+						GROUP BY tb.kd_invoice
+						ORDER BY tanggal, kd_invoice";
     return $this->db->query($sql)->result_array();
 	}
 

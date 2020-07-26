@@ -67,6 +67,9 @@ if ($(window).width() <= 768) {
 <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
 
+<script src="<?= base_url() ?>assets/plugins/daterangepicker/moment.min.js"></script>
+<script src="<?= base_url() ?>assets/plugins/daterangepicker/daterangepicker.js"></script>
+
 <?php
   $segment = $this->uri->segment(1);
 

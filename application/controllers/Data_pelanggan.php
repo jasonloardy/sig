@@ -30,9 +30,12 @@ class Data_pelanggan extends CI_Controller {
 
   public function geojson()
   {
+    $from = $_GET['from'];
+    $to = $_GET['to'];
+
     $response['type'] = 'FeatureCollection';
 
-    $pelanggan = $this->data_pelanggan_model->all_pelanggan_penjualan();
+    $pelanggan = $this->data_pelanggan_model->all_pelanggan_penjualan($from, $to);
 
     $i = 0;
     foreach ($pelanggan as $p) {
@@ -44,7 +47,7 @@ class Data_pelanggan extends CI_Controller {
 
       $response['features'][$i]['properties']['nama_pelanggan'] = $p->nama_pelanggan;
 
-      $penjualan = $this->data_pelanggan_model->detail_penjualan($p->kd_pelanggan);
+      $penjualan = $this->data_pelanggan_model->detail_penjualan($p->kd_pelanggan, $from, $to);
 
       $order = 0;
       foreach ($penjualan as $p) {

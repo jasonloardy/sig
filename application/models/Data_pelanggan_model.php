@@ -15,20 +15,22 @@ class Data_pelanggan_model extends CI_Model {
     return $this->db->query($sql)->result();
 	}
 
-	public function all_pelanggan_penjualan()
+	public function all_pelanggan_penjualan($from, $to)
 	{
 		$sql = "SELECT * FROM tb_pelanggan tp
-						WHERE tp.geolocation IS NOT NULL";
+						JOIN tb_invoice ti ON tp.kd_pelanggan = ti.kd_pelanggan
+						WHERE tp.geolocation IS NOT NULL AND (tanggal BETWEEN '$from' and '$to')
+						GROUP BY tp.kd_pelanggan";
     return $this->db->query($sql)->result();
 	}
 
-	public function detail_penjualan($id)
+	public function detail_penjualan($id, $from, $to)
 	{
 		$sql = "SELECT ti.kd_invoice, IFNULL(ti.diskon, 0) diskon, SUM(qty*harga) subtotal
 						FROM tb_invoice ti
 						JOIN tb_invoice_detail tid ON ti.kd_invoice = tid.kd_invoice
 						JOIN tb_pelanggan tp ON ti.kd_pelanggan = tp.kd_pelanggan
-						WHERE tp.kd_pelanggan = '$id'
+						WHERE tp.kd_pelanggan = '$id' AND (tanggal BETWEEN '$from' and '$to')
 						GROUP BY ti.kd_invoice";
 		return $this->db->query($sql)->result();
 	}

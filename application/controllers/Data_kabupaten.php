@@ -29,10 +29,12 @@ class Data_kabupaten extends CI_Controller {
 
   public function geojson()
   {
+    $from = $_GET['from'];
+    $to = $_GET['to'];
+
     $response['type'] = 'FeatureCollection';
 
     $kabupaten = $this->data_kabupaten_model->all_kabupaten();
-
 
     $i = 0;
     foreach ($kabupaten as $k) {
@@ -42,7 +44,7 @@ class Data_kabupaten extends CI_Controller {
       $response['features'][$i]['geometry']['coordinates'] = json_decode($k->kordinat);
       $response['features'][$i]['properties']['ID'] = $k->kd_kabupaten;
       $response['features'][$i]['properties']['Kabupaten_'] = $k->nama_kabupaten;
-      $penjualan = $this->data_kabupaten_model->detail_penjualan($k->kd_kabupaten);
+      $penjualan = $this->data_kabupaten_model->detail_penjualan($k->kd_kabupaten, $from, $to);
       foreach ($penjualan as $p) {
         $setelah_diskon = $p->subtotal - ($p->subtotal * $p->diskon / 100);
         $setelah_pajak = $setelah_diskon + ($setelah_diskon * 0.1);

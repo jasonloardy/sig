@@ -23,7 +23,10 @@ class Data_penjualan extends CI_Controller {
 
   public function json_all()
   {
-    $jual = $this->data_penjualan_model->all_penjualan();
+    $from = str_replace("/", "-", $_GET['from']);
+    $to = str_replace("/", "-", $_GET['to']);
+
+    $jual = $this->data_penjualan_model->all_penjualan($from, $to);
 
     $response = array();
 
@@ -46,7 +49,7 @@ class Data_penjualan extends CI_Controller {
       $j['sub_total'] = $sub_total;
       $j['jumlah_diskon'] = $jumlah_diskon;
       $j['ppn_10_persen'] = $ppn_10_persen;
-      $j['total_faktur'] = $total_faktur;
+      $j['total_faktur'] = intval($total_faktur);
 
       array_push($response, $j);
     }

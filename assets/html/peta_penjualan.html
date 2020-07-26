@@ -51,10 +51,18 @@
 <script src="../template/sb-admin-2/vendor/jquery/jquery.min.js"></script>
 <script>
 	$(document).ready(function() {
+		console.log(getUrlParameter("from") + ' to ' +getUrlParameter("to"));
 		map();
 	});
 
 	var isPelanggan = false;
+
+	function getUrlParameter(name) {
+	  name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+	  var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+	  var results = regex.exec(location.search);
+	  return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+	};
 
 	function addCommas(nStr) {
 		nStr += '';
@@ -78,14 +86,6 @@
     });
 
 		map.on('load', function() {
-			// map.addLayer({
-		  //   'id': 'pelanggan-layer',
-		  //   'type': 'point',
-		  //   'source': {
-	    //     'type': 'geojson',
-	    //     'data': '../../data_pelanggan/geojson'
-		  //   }
-			// });
 
 			map.loadImage('../img/marker.png',
 				function(error, image) {
@@ -97,7 +97,7 @@
 						'type': 'symbol',
 						'source': {
 							'type': 'geojson',
-							'data': '../../data_pelanggan/geojson'
+							'data': '../../data_pelanggan/geojson?from='+getUrlParameter("from")+'&to='+getUrlParameter("to")
 							},
 						'layout': {
 							'visibility': 'none',
@@ -114,7 +114,7 @@
 		    'type': 'fill',
 		    'source': {
 	        'type': 'geojson',
-	        'data': '../../data_kabupaten/geojson'
+	        'data': '../../data_kabupaten/geojson?from='+getUrlParameter("from")+'&to='+getUrlParameter("to")
 		    },
 		    'paint': {
 	        'fill-color': {

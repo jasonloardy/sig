@@ -2,6 +2,13 @@ $(document).ready(function() {
   tabel_penjualan();
 });
 
+function getUrlParameter(name) {
+  name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+  var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+  var results = regex.exec(location.search);
+  return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+
 function addCommas(nStr) {
 	nStr += '';
 	x = nStr.split('.');
@@ -10,6 +17,18 @@ function addCommas(nStr) {
 	var rgx = /(\d+)(\d{3})/;
 	while (rgx.test(x1)) {
 		x1 = x1.replace(rgx, '$1' + ',' + '$2');
+	}
+	return x1 + x2;
+}
+
+function addPeriod(nStr) {
+	nStr += '';
+	x = nStr.split('.');
+	x1 = x[0];
+	x2 = '';
+	var rgx = /(\d+)(\d{3})/;
+	while (rgx.test(x1)) {
+		x1 = x1.replace(rgx, '$1' + '.' + '$2');
 	}
 	return x1 + x2;
 }
@@ -61,10 +80,20 @@ function format (d) {
           '</table>';
 }
 
-function tabel_penjualan() {
+function tabel_penjualan(json) {
+
+  var from = getUrlParameter("from");
+  if (from == '') {
+    from = moment().format('YYYY/MM/DD');
+  }
+  var to = getUrlParameter("to");
+  if (to == '') {
+    to = moment().format('YYYY/MM/DD');
+  }
+
   var table = $('#tabel_penjualan').DataTable({
       "ajax" : {
-        "url" : "data_penjualan/json_all",
+        "url" : "data_penjualan/json_all?from="+from+"&to="+to,
         "dataSrc" : ""
       },
       "columns" : [
@@ -88,7 +117,39 @@ function tabel_penjualan() {
           "render": function (data, type, row) {
             return addCommas(data);
           } }
-      ]
+      ],
+      "footerCallback": function ( row, data, start, end, display ) {
+        var api = this.api(), data;
+
+        // Remove the formatting to get integer data for summation
+        var intVal = function ( i ) {
+          return typeof i === 'string' ?
+              i.replace(/[\$,]/g, '')*1 :
+              typeof i === 'number' ?
+                  i : 0;
+        };
+
+        // Total over all pages
+        total = api
+          .column( 5 )
+          .data()
+          .reduce( function (a, b) {
+              return intVal(a) + intVal(b);
+          }, 0 );
+
+        // Total over this page
+        pageTotal = api
+          .column( 5, { page: 'current'} )
+          .data()
+          .reduce( function (a, b) {
+              return intVal(a) + intVal(b);
+          }, 0 );
+
+        // Update footer
+        $( api.column( 5 ).footer() ).html(
+          'Rp. '+ addPeriod(pageTotal) +' (Rp. '+ addPeriod(total) +')'
+        );
+      }
   });
 
   // Add event listener for opening and closing details
@@ -106,5 +167,25 @@ function tabel_penjualan() {
         row.child( format(row.data()) ).show();
         tr.addClass('shown');
     }
+  });
+
+  $('#periode').daterangepicker({
+    "showDropdowns": true,
+    "locale": {
+       "format": "YYYY/MM/DD"
+     },
+    ranges: {
+      'Semua Data': ['1970/01/01', moment()],
+      'Hari ini': [moment(), moment()],
+      'Kemarin': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+      '7 Hari Terakhir': [moment().subtract(6, 'days'), moment()],
+      '30 Hari Terakhir': [moment().subtract(29, 'days'), moment()],
+      'Bulan Ini': [moment().startOf('month'), moment().endOf('month')],
+      'Bulan Lalu': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')],
+    },
+      "startDate": from,
+      "endDate": to
+    }, function(start, end, label) {
+        window.location = 'data_penjualan?from=' + start.format('YYYY/MM/DD') + '&to=' + end.format('YYYY/MM/DD');
   });
 }

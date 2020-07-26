@@ -33,7 +33,30 @@
   <h1 class="h3 mb-2 text-gray-800">Peta Penjualan</h1>
   <hr>
 
-	<iframe src="assets/html/peta_penjualan.html" width="100%" height="600px"></iframe>
+	<div class="card shadow mt-3 mb-3">
+    <div class="card-body">
+      <label for="periode">Periode Peta Penjualan</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+        </div>
+        <input type="text" class="form-control" id="periode">
+      </div>
+    </div>
+  </div>
+
+	<?php
+		$from = date("Y-m-d");
+		$to = date("Y-m-d");
+		if (isset($_GET['from'])) {
+			$from = str_replace('/', '-', $_GET['from']);
+		}
+		if (isset($_GET['to'])) {
+			$to = str_replace('/', '-', $_GET['to']);;
+		}
+	?>
+
+	<iframe src="assets/html/peta_penjualan.html<?= '?from=' . $from . '&to=' . $to ?>" width="100%" height="600px"></iframe>
 
 
 </div>

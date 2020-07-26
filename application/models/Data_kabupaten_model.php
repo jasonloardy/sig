@@ -9,14 +9,14 @@ class Data_kabupaten_model extends CI_Model {
     return $this->db->query($sql)->result();
 	}
 
-	public function detail_penjualan($id)
+	public function detail_penjualan($id, $from, $to)
 	{
 		$sql = "SELECT tp.kd_kabupaten, ti.kd_invoice, SUM(tid.qty*tid.harga) subtotal,
 						IFNULL(ti.diskon, 0) diskon
 						FROM tb_invoice ti
 						JOIN tb_invoice_detail tid ON ti.kd_invoice = tid.kd_invoice
 						JOIN tb_pelanggan tp ON ti.kd_pelanggan = tp.kd_pelanggan
-						WHERE tp.kd_kabupaten = $id
+						WHERE tp.kd_kabupaten = $id AND (tanggal BETWEEN '$from' and '$to')
 						GROUP BY ti.kd_invoice";
 		return $this->db->query($sql)->result();
 	}

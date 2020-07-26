@@ -67,6 +67,18 @@
   </div>
   <?php } ?>
 
+  <div class="card shadow mt-3">
+    <div class="card-body">
+      <label for="periode">Periode Penjualan</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+        </div>
+        <input type="text" class="form-control" id="periode">
+      </div>
+    </div>
+  </div>
+
   <!-- DataTales Example -->
   <div class="card shadow mb-4 mt-3">
     <div class="card-header py-3">
@@ -85,6 +97,13 @@
               <th class="text-center">Total Faktur</th>
             </tr>
           </thead>
+          <tfoot>
+            <tr>
+                <th colspan="4"></th>
+                <th>Total Penjualan :</th>
+                <th></th>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </div>
