@@ -117,11 +117,15 @@ class Data_kabupaten extends CI_Controller {
 
           // echo json_encode($geojson->features);
 
-          $insert = $this->data_kabupaten_model->insert($geojson->features);
-          if ($insert) {
-            $this->session->set_flashdata('kbpOk', 'Data Berhasil di-Import!');
+          if (!$geojson == null) {
+            $insert = $this->data_kabupaten_model->insert($geojson->features);
+            if ($insert) {
+              $this->session->set_flashdata('kbpOk', 'Data Berhasil di-Import!');
+            } else {
+              $this->session->set_flashdata('kbpError', 'Data Gagal di-Import!');
+            }
           } else {
-            $this->session->set_flashdata('kbpError', 'Data Gagal di-Import!');
+            $this->session->set_flashdata('kbpError', 'Format File Tidak Cocok!');
           }
         } else {
           $this->session->set_flashdata('kbpError', 'Data Gagal di-Upload!');

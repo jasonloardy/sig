@@ -58,10 +58,10 @@
                   <?php } ?>
                   <form class="user" action="" method="post">
                     <div class="form-group">
-                      <input type="text" class="form-control form-control-user" name="username" placeholder="Enter Username...">
+                      <input type="text" class="form-control form-control-user" name="username" placeholder="Enter Username..." required>
                     </div>
                     <div class="form-group">
-                      <input type="password" class="form-control form-control-user" name="password" placeholder="Password">
+                      <input type="password" class="form-control form-control-user" name="password" placeholder="Password" required>
                     </div>
                     <!-- <div class="form-group">
                       <div class="custom-control custom-checkbox small">

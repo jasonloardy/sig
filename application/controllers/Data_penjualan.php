@@ -150,11 +150,15 @@ class Data_penjualan extends CI_Controller {
           $arrayData = xmlToArray($xmlNode);
           $invoice = $arrayData['NMEXML']['TRANSACTIONS']['SALESINVOICE'];
 
-          $insert = $this->data_penjualan_model->insert($invoice);
-          if ($insert) {
-            $this->session->set_flashdata('pjlOk', 'Data Berhasil di-Import!');
+          if (!$invoice == null) {
+            $insert = $this->data_penjualan_model->insert($invoice);
+            if ($insert) {
+              $this->session->set_flashdata('pjlOk', 'Data Berhasil di-Import!');
+            } else {
+              $this->session->set_flashdata('pjlError', 'Data Gagal di-Import!');
+            }
           } else {
-            $this->session->set_flashdata('pjlError', 'Data Gagal di-Import!');
+            $this->session->set_flashdata('pjlError', 'Format File Tidak Cocok!');
           }
         } else {
           $this->session->set_flashdata('pjlError', 'Data Gagal di-Upload!');

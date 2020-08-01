@@ -86,7 +86,7 @@ if ($(window).width() <= 768) {
     case 'data_kabupaten':
       echo '<script src="'. base_url() .'assets/js/data_kabupaten.js"></script>';
       break;
-    case 'peta_penjualan':
+    case 'dashboard':
       echo '<script src="'. base_url() .'assets/js/peta_penjualan.js"></script>';
       break;
     default:

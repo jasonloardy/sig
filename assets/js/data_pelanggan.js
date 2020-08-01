@@ -114,33 +114,33 @@ function map_pelanggan(geo) {
 
 function get_alamat(geolocation) {
   // API Mapbox
-  // $.getJSON("https://api.mapbox.com/geocoding/v5/mapbox.places/" + geolocation + ".json?access_token=" + token, function(data){
-  //   if ($('#alamat').val() == '') {
-  //     $('#alamat').val(data.features[0].properties.address);
-  //   }
-  //   var indexKabupaten = data.features[0].context.findIndex(x => x.id.indexOf('place') != -1);
-  //   var kabupaten = data.features[0].context[indexKabupaten].text.toUpperCase();
-  //   kabupaten = kabupaten.replace('KABUPATEN ', '');
-  //   kabupaten = kabupaten.replace('KOTA ', '');
-  //   console.log(kabupaten);
-  //   $("select").val($("select option:first").val());
-  //   $('select option:contains("'+kabupaten+'")').attr('selected', true);
-  // });
-
-  // API Google Maps
-  var geolocation = geolocation.split(', ');
-  $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?latlng="+ geolocation[1] +","+ geolocation[0] + "&key=" + tokenGmaps, function(data){
+  $.getJSON("https://api.mapbox.com/geocoding/v5/mapbox.places/" + geolocation + ".json?access_token=" + token, function(data){
     if ($('#alamat').val() == '') {
-      $('#alamat').val(data.results[0].formatted_address);
+      $('#alamat').val(data.features[0].properties.address);
     }
-    var indexKabupaten = data.results[0].address_components.findIndex(x => x.types[0] === 'administrative_area_level_2');
-    var kabupaten = data.results[0].address_components[indexKabupaten].long_name.toUpperCase();
+    var indexKabupaten = data.features[0].context.findIndex(x => x.id.indexOf('place') != -1);
+    var kabupaten = data.features[0].context[indexKabupaten].text.toUpperCase();
     kabupaten = kabupaten.replace('KABUPATEN ', '');
     kabupaten = kabupaten.replace('KOTA ', '');
     console.log(kabupaten);
     $("select").val($("select option:first").val());
     $('select option:contains("'+kabupaten+'")').attr('selected', true);
   });
+
+  // API Google Maps
+  // var geolocation = geolocation.split(', ');
+  // $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?latlng="+ geolocation[1] +","+ geolocation[0] + "&key=" + tokenGmaps, function(data){
+  //   if ($('#alamat').val() == '') {
+  //     $('#alamat').val(data.results[0].formatted_address);
+  //   }
+  //   var indexKabupaten = data.results[0].address_components.findIndex(x => x.types[0] === 'administrative_area_level_2');
+  //   var kabupaten = data.results[0].address_components[indexKabupaten].long_name.toUpperCase();
+  //   kabupaten = kabupaten.replace('KABUPATEN ', '');
+  //   kabupaten = kabupaten.replace('KOTA ', '');
+  //   console.log(kabupaten);
+  //   $("select").val($("select option:first").val());
+  //   $('select option:contains("'+kabupaten+'")').attr('selected', true);
+  // });
 }
 
 function get_googleMaps() {

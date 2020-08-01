@@ -30,7 +30,7 @@
 <div class="container-fluid">
 
   <!-- Page Heading -->
-  <h1 class="h3 mb-2 text-gray-800">Peta Penjualan</h1>
+  <h1 class="h3 mb-2 text-gray-800">Dashboard</h1>
   <hr>
 
 	<div class="card shadow mt-3 mb-3">
@@ -56,7 +56,7 @@
 		}
 	?>
 
-	<iframe src="assets/html/peta_penjualan.html<?= '?from=' . $from . '&to=' . $to ?>" width="100%" height="600px"></iframe>
+	<iframe src="assets/html/peta_penjualan.html<?= '?from=' . $from . '&to=' . $to ?>" width="100%" height="550px"></iframe>
 
 
 </div>

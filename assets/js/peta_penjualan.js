@@ -36,6 +36,6 @@ function periode() {
       "startDate": from,
       "endDate": to
     }, function(start, end, label) {
-        window.location = 'peta_penjualan?from=' + start.format('YYYY/MM/DD') + '&to=' + end.format('YYYY/MM/DD');
+        window.location = 'dashboard?from=' + start.format('YYYY/MM/DD') + '&to=' + end.format('YYYY/MM/DD');
   });
 }

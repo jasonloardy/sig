@@ -29,7 +29,6 @@ class Data_kabupaten_model extends CI_Model {
 
 	public function insert($geojson)
 	{
-		// $sql_kabupaten = "INSERT INTO tb_kabupaten (id) VALUES (?)";
 		$sql_kabupaten = "INSERT IGNORE INTO tb_kabupaten (kd_kabupaten, tipe, kordinat, nama_kabupaten, provinsi) VALUES (?, ?, ?, ?, ?)";
 
 		$this->db->trans_start();
@@ -37,7 +36,6 @@ class Data_kabupaten_model extends CI_Model {
 		foreach ($geojson as $g) {
 			$this->db->query($sql_kabupaten, array($g->properties->ID, $g->geometry->type, json_encode($g->geometry->coordinates),
 			strtoupper($g->properties->Kabupaten_), strtoupper($g->properties->Provinsi)));
-			// $this->db->query($sql_kabupaten, array($g['properties']['ID'], $g['geometry']['type'], $g['geometry']['coordinates'], $g['properties']['Kabupaten_']));
 		}
 
 		$this->db->trans_complete();

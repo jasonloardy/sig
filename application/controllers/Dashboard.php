@@ -16,7 +16,7 @@ class Dashboard extends CI_Controller {
     $data = array(
       'title' => 'Dashboard'
     );
-    $this->load->view('pages/dashboard', $data);
+    $this->load->view('pages/peta_penjualan', $data);
 	}
 
 }

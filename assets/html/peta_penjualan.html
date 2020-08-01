@@ -4,11 +4,10 @@
 <meta charset="utf-8" />
 <title></title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
 <style>
 	body { margin: 0; padding: 0; }
-	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+	#map { position: absolute; top: 0; bottom: 0; width: 100%}
 
 	.legend {
 		background-color: #fff;
@@ -34,6 +33,17 @@
 		margin-right: 5px;
 		width: 10px;
 	}
+
+	.fitBounds {
+    background-color: #f66;
+    font-family: Helvetica, Arial, Sans-Serif;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.7em;
+    border-radius: 0.2em;
+    cursor: pointer;
+  }
 </style>
 </head>
 <body>
@@ -48,14 +58,125 @@
 	<div><span style="background-color: rgb(240,255,0,0.7)"></span>1 - 5,000,000</div>
 	<div><span style="background-color: #ffffff"></span>0</div>
 </div>
+<div class="fitBounds">
+  <select id="kabupaten" onchange="flyToKabupaten()">
+		<option value="0">--- Pilih Kabupaten ---</option>
+    <!-- <option value="134">MAKASSAR</option>
+    <option value="153">LUWU TIMUR</option>
+    <option value="158">MAJENE</option>
+    <option value="160">MAROS</option> -->
+  </select>
+</div>
 <script src="../template/sb-admin-2/vendor/jquery/jquery.min.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
+<script src="https://unpkg.com/@turf/turf/turf.min.js"></script>
 <script>
-	$(document).ready(function() {
-		console.log(getUrlParameter("from") + ' to ' +getUrlParameter("to"));
-		map();
+	// $(document).ready(function() {
+	// 	map();
+	// });
+
+	var map, kabupatenJson;
+	var urlKabupaten = '../../data_kabupaten/geojson?from='+getUrlParameter("from")+'&to='+getUrlParameter("to");
+	var isPelanggan = false;
+
+	$.getJSON(urlKabupaten, function(json){
+    kabupatenJson = json;
+		$.each(json.features, function(i, item){
+      $("#kabupaten").append("<option value='"+item.properties.ID+"'>"+item.properties.Kabupaten_+"</option>");
+    });
 	});
 
-	var isPelanggan = false;
+	// map
+	mapboxgl.accessToken = 'pk.eyJ1IjoiamFzb25sb2FyZHkiLCJhIjoiY2ticHkwYTJzMGQyMTJva2F1ZzFubDc2cyJ9.hVSZAbuxC_SDI7sCl2tkyA';
+	var map = new mapboxgl.Map({
+		container: 'map',
+		style: 'mapbox://styles/mapbox/streets-v11',
+		center: [121.229594, -2.058725],
+		zoom: 5.75
+	});
+
+	map.on('load', function() {
+
+		map.loadImage('../img/marker.png',
+			function(error, image) {
+				if (error) throw error;
+				map.addImage('marker', image);
+
+				map.addLayer({
+					'id': 'points',
+					'type': 'symbol',
+					'source': {
+						'type': 'geojson',
+						'data': '../../data_pelanggan/geojson?from='+getUrlParameter("from")+'&to='+getUrlParameter("to")
+						},
+					'layout': {
+						'visibility': 'none',
+						'icon-image': 'marker',
+						'icon-size': 1,
+						'icon-allow-overlap': true
+						}
+				});
+			}
+		);
+
+		map.addLayer({
+			'id': 'states-layer',
+			'type': 'fill',
+			'source': {
+				'type': 'geojson',
+				'data': kabupatenJson
+				// 'data': '../../data_kabupaten/geojson?from='+getUrlParameter("from")+'&to='+getUrlParameter("to")
+			},
+			'paint': {
+				'fill-color': {
+						type: 'identity',
+						property: 'color',
+				},
+				'fill-opacity': 0.7,
+				'fill-outline-color': 'rgba(200, 100, 240, 1)'
+			}
+		});
+
+		map.on('click', 'points', function(e) {
+			new mapboxgl.Popup()
+			.setLngLat(e.lngLat)
+			.setHTML(e.features[0].properties.nama_pelanggan + '<br>Jumlah Order : ' + e.features[0].properties.total_order +
+			 '<br>Total : Rp. ' + addCommas(e.features[0].properties.total_penjualan))
+			.addTo(map);
+		});
+
+		// When a click event occurs on a feature in the states layer, open a popup at the
+		// location of the click, with description HTML from its properties.
+		map.on('click', 'states-layer', function(e) {
+			if (isPelanggan == false) {
+				new mapboxgl.Popup()
+				.setLngLat(e.lngLat)
+				.setHTML('<center>' + e.features[0].properties.Kabupaten_ + '<br>Rp. ' + addCommas(e.features[0].properties.total_faktur) + '</center>')
+				.addTo(map);
+			}
+		});
+
+		// Change the cursor to a pointer when the mouse is over the states layer.
+		map.on('mouseenter', 'states-layer', function() {
+			map.getCanvas().style.cursor = 'pointer';
+		});
+
+		// Change it back to a pointer when it leaves.
+		map.on('mouseleave', 'states-layer', function() {
+			map.getCanvas().style.cursor = '';
+		});
+	});
+
+	$("#pelanggan").click( function(){
+		 if ($(this).is(':checked')) {
+			 isPelanggan = true;
+			 map.setLayoutProperty('points', 'visibility', 'visible');
+		 } else {
+			 isPelanggan = false;
+			 map.setLayoutProperty('points', 'visibility', 'none');
+		 }
+	});
+	//end map
 
 	function getUrlParameter(name) {
 	  name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
@@ -76,95 +197,31 @@
 		return x1 + x2;
 	}
 
-	function map() {
-		mapboxgl.accessToken = 'pk.eyJ1IjoiamFzb25sb2FyZHkiLCJhIjoiY2ticHkwYTJzMGQyMTJva2F1ZzFubDc2cyJ9.hVSZAbuxC_SDI7sCl2tkyA';
-    var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11',
-      center: [121.229594, -2.058725],
-      zoom: 5.75
-    });
-
-		map.on('load', function() {
-
-			map.loadImage('../img/marker.png',
-				function(error, image) {
-					if (error) throw error;
-					map.addImage('marker', image);
-
-					map.addLayer({
-						'id': 'points',
-						'type': 'symbol',
-						'source': {
-							'type': 'geojson',
-							'data': '../../data_pelanggan/geojson?from='+getUrlParameter("from")+'&to='+getUrlParameter("to")
-							},
-						'layout': {
-							'visibility': 'none',
-							'icon-image': 'marker',
-							'icon-size': 1,
-							'icon-allow-overlap': true
-							}
-					});
-				}
-			);
-
-			map.addLayer({
-		    'id': 'states-layer',
-		    'type': 'fill',
-		    'source': {
-	        'type': 'geojson',
-	        'data': '../../data_kabupaten/geojson?from='+getUrlParameter("from")+'&to='+getUrlParameter("to")
-		    },
-		    'paint': {
-	        'fill-color': {
-	            type: 'identity',
-	            property: 'color',
-	        },
-					'fill-opacity': 0.7,
-	        'fill-outline-color': 'rgba(200, 100, 240, 1)'
-		    }
+	function flyToKabupaten() {
+		kdKabupaten = $('#kabupaten').val();
+		if (kdKabupaten != 0) {
+			var index = kabupatenJson.features.findIndex(x => x.properties.ID === kdKabupaten);
+			var tipe = kabupatenJson.features[index].geometry.type;
+			var kordinat;
+			if (tipe == 'Polygon') {
+				kordinat = kabupatenJson.features[index].geometry.coordinates;
+			} else if (tipe == 'MultiPolygon'){
+				kordinat = kabupatenJson.features[index].geometry.coordinates[0];
+			}
+			var polygon = turf.polygon(kordinat);
+			var centerKabupaten = turf.centerOfMass(polygon).geometry.coordinates;
+			map.flyTo({
+				center: centerKabupaten,
+				zoom: 10,
+				essential: true
 			});
-
-			map.on('click', 'points', function(e) {
-				new mapboxgl.Popup()
-				.setLngLat(e.lngLat)
-				.setHTML(e.features[0].properties.nama_pelanggan + '<br>Jumlah Order : ' + e.features[0].properties.total_order +
-				 '<br>Total : Rp. ' + addCommas(e.features[0].properties.total_penjualan))
-				.addTo(map);
+		} else {
+			map.flyTo({
+				center: [121.229594, -2.058725],
+				zoom: 5.75,
+				essential: true
 			});
-
-			// When a click event occurs on a feature in the states layer, open a popup at the
-			// location of the click, with description HTML from its properties.
-			map.on('click', 'states-layer', function(e) {
-				if (isPelanggan == false) {
-					new mapboxgl.Popup()
-					.setLngLat(e.lngLat)
-					.setHTML('<center>' + e.features[0].properties.Kabupaten_ + '<br>Rp. ' + addCommas(e.features[0].properties.total_faktur) + '</center>')
-					.addTo(map);
-				}
-			});
-
-			// Change the cursor to a pointer when the mouse is over the states layer.
-			map.on('mouseenter', 'states-layer', function() {
-				map.getCanvas().style.cursor = 'pointer';
-			});
-
-			// Change it back to a pointer when it leaves.
-			map.on('mouseleave', 'states-layer', function() {
-				map.getCanvas().style.cursor = '';
-			});
-		});
-
-		$("#pelanggan").click( function(){
-		   if ($(this).is(':checked')) {
-				 isPelanggan = true;
-				 map.setLayoutProperty('points', 'visibility', 'visible');
-			 } else {
-				 isPelanggan = false;
-				 map.setLayoutProperty('points', 'visibility', 'none');
-			 }
-		});
+		}
 	}
 </script>
 

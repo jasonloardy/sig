@@ -11,7 +11,7 @@ class Data_pelanggan_model extends CI_Model {
 
 	public function all_kabupaten()
 	{
-		$sql = "SELECT * FROM tb_kabupaten";
+		$sql = "SELECT * FROM tb_kabupaten ORDER BY nama_kabupaten";
     return $this->db->query($sql)->result();
 	}
 

@@ -33,20 +33,6 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        GEOGRAFIS
-      </div>
-
-      <li class="nav-item <?= ($segment == 'peta_penjualan') ? 'active' : '' ?>">
-        <a class="nav-link" href="<?= base_url() ?>peta_penjualan">
-          <i class="fas fa-fw fa-globe"></i>
-          <span>Peta Penjualan</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
         DATA MASTER
       </div>
 
